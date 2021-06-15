@@ -1,0 +1,16 @@
+{% extends 'base_layout.html' %}
+
+{% block content%}
+    <h1>List of Atendees</h1>
+
+    {% for attendmo in attends %}
+        <div class="taskmo">
+            <h2>{{ attendmo.day }}</a></h2>
+            <p>{{ attendmo.time }}</p>
+            <p>{{ attendmo.date }}</p>
+            <p>{{ attendmo.in_and_out }}</p>
+            <p class="student">attendance by {{ attendmo.student.username }}</p>
+        </div>
+    {% endfor %}
+    
+{% endblock %}
