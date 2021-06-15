@@ -7,10 +7,10 @@ from .forms import CreateAttendance, CreateTask, StudentForm, QuizForm
 
 def HomePage(request):
     return render(request, 'home.html')
-
+@login_required(login_url="/accounts/login/")
 def StudentViews(request):
     return render(request, 'student.html')
-
+@login_required(login_url="/accounts/login/")
 def TeacherViews(request):
     return render(request, 'teacher.html')
 #TASK
