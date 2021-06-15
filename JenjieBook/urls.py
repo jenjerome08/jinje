@@ -13,14 +13,14 @@ urlpatterns = [
     url(r'^attendance_page/$', article_views.attendance_page, name="attendance_page"),
     url(r'^student_page/$', article_views.student_page, name="student_page"),
     url(r'^quiz_page/$', article_views.quiz_page, name="quiz_page"),
-    url(r'^$', article_views.task_list, name="home"),
+    url(r'^list/$', article_views.task_list, name="list"),
     
 
 
 
-    #url(r'^about/$', views.timer, name="timer"),
-    url(r'^quiz/$', article_views.quiz, name="quiz"),
-    #url(r'^$', views.timer, name="timer"),
+    url(r'^$', article_views.HomePage, name="home"),
+    url(r'^student/$', article_views.StudentViews, name="student"),
+    url(r'^teacher/$', article_views.TeacherViews, name="teacher"),
 
 ]
 

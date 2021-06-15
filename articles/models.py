@@ -63,7 +63,7 @@ class CreateQuiz(models.Model):
     c4 = models.CharField(max_length=50, default="", blank=True)
     d4 = models.CharField(max_length=50, default="", blank=True)
 class StudentInfo(models.Model):
-    student = models.ForeignKey(User, on_delete=models.CASCADE, default=None)
+    student = models.OneToOneField(User,on_delete=models.CASCADE,primary_key=True,)
     first_name = models.CharField(max_length=50, default="")
     last_name = models.CharField(max_length=50, default="")
     section = models.SlugField()

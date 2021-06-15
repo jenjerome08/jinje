@@ -5,8 +5,14 @@ from django.contrib.auth.decorators import login_required
 from . import forms
 from .forms import CreateAttendance, CreateTask, StudentForm, QuizForm
 
-def quiz(request):
-    return render(request, 'articles/quiz.html')
+def HomePage(request):
+    return render(request, 'home.html')
+
+def StudentViews(request):
+    return render(request, 'student.html')
+
+def TeacherViews(request):
+    return render(request, 'teacher.html')
 #TASK
 def task_list(request):
     tasks = Gclassroom.objects.all().order_by('subject');

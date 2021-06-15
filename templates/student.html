@@ -1,0 +1,29 @@
+{% extends 'base_layout.html' %}
+
+{% block content %}
+<div class="create-task">
+        <h2>Create a Task</h2>
+        <form class="site-form" action="" method="post" enctype="multipart/form-data">
+    <!-- home section start -->
+    <section class="home" id="home">
+        <div class="max-width">
+            <div class="home-content">
+              <center><div class="text-2">Things To-Do</div> <br></center>
+<a href="{% url 'student_page' %}">&nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  asfasfafasfsafas&nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  </a><br><br><br>
+<a href="{% url 'attendance_page' %}">Attendance</a>&nbsp;  &nbsp; &nbsp;  &nbsp; &nbsp;  &nbsp;  &nbsp;  <a href="{% url 'articles:create' %}">Task</a><br><br>
+</a><br>
+<a href="{% url 'articles:quiz_list' %}">Quiz</a>
+            </div>
+
+        
+</div>
+
+        </form>
+    </div>
+
+</section>
+<br><br><br><br><br><br><br><br><br><br><br><br><br><br>
+   
+{% endblock %}
+        
+

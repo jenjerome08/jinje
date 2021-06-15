@@ -4,7 +4,14 @@ from . import views
 app_name = 'articles'
 
 urlpatterns = [
-    url(r'^$', views.task_list, name="list"),
+    url(r'^$', views.HomePage, name="home"),
+    url(r'^student/$', views.StudentViews, name="student"),
+    url(r'^teacher/$', views.TeacherViews, name="teacher"),
+
+
+
+
+    url(r'^list/$', views.task_list, name="list"),
     url(r'^create/$', views.task_create, name="create"),
     url(r'^(?P<task>[\w-]+)/$', views.task_detail, name="detail"),
     #Attendance
