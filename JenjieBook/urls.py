@@ -20,7 +20,8 @@ urlpatterns = [
 
     url(r'^$', article_views.HomePage, name="home"),
     url(r'^student/$', article_views.StudentViews, name="student"),
-    url(r'^teacher/$', article_views.TeacherViews, name="teacher"),
+    url(r'^teacher/$', article_views.TeacherViews
+        , name="teacher"),
 
 ]
 
